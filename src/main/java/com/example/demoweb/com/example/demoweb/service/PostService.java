@@ -12,13 +12,10 @@ import java.util.List;
 
 @Service
 public class PostService {
-    private final List<Post> posts = List.of(
-            new Post("Пост 1", new Date()),
-            new Post("Пост 2", new Date()),
-            new Post("Пост 3", new Date())
-    );
+    //public final ArrayList<Post> posts = new ArrayList<>();
+    public final ArrayList<Post> posts = new ArrayList<>();
 
-    public List<Post> listAllPosts(){
+    public ArrayList<Post> listAllPosts(){
         return posts;
     }
     public void create(String text) {

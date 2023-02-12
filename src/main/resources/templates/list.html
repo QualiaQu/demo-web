@@ -9,6 +9,7 @@
 <body>
 <div class="container">
     <h1 th:text="${appName}" style="color: green">Default app name</h1>
+    <input type="submit" class="btn btn-primary" value="Новый пост">
     <hr/>
     <div class="content">
         <div class="row article" th:each="post : ${posts}">
