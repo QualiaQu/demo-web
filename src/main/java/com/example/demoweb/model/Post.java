@@ -8,8 +8,6 @@ import java.util.Date;
 
 @Entity
 public class Post implements Serializable {
-
-
     private String text;
 
     @Id
