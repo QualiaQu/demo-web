@@ -6,10 +6,22 @@ import java.util.Date;
 
 public class Post {
     private final String text;
+
+    public Long getId() {
+        return id;
+    }
+
+    private Long id;
+
+    public void setLikes(Integer likes) {
+        this.likes = likes;
+    }
+
     private Integer likes;
     private final Date creationDate;
 
-    public Post(String text, Date date) {
+    public Post(long id, String text, Date date) {
+        this.id = id;
         this.text = text;
         this.creationDate = date;
     }
