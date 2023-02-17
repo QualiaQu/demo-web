@@ -7,4 +7,6 @@ window.onload = function() {
             btn.text("" + data + " ❤");
             btn.removeClass("btn-secondary");
             btn.addClass("btn-danger");
-        });    });};
+        });
+    });
+};

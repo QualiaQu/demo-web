@@ -6,18 +6,8 @@ import java.util.Date;
 
 public class Post {
     private final String text;
-
-    public Long getId() {
-        return id;
-    }
-
-    private Long id;
-
-    public void setLikes(Integer likes) {
-        this.likes = likes;
-    }
-
-    private Integer likes;
+    private final Long id;
+    private int likes;
     private final Date creationDate;
 
     public Post(long id, String text, Date date) {
@@ -25,15 +15,18 @@ public class Post {
         this.text = text;
         this.creationDate = date;
     }
-
+    public Long getId() {
+        return id;
+    }
+    public void setLikes(Integer likes) {
+        this.likes = likes;
+    }
     public String getText() {
         return text;
     }
-
-    public Integer getLikes() {
+    public int getLikes() {
         return likes;
     }
-
     public Date getCreationDate() {
         return creationDate;
     }
